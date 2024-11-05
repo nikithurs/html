@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body bgcolor=skyblue>
+<header>
+<h1 align="center"><span style="color:red">User Registration Form</span></h1>
+</header>
+<nav>
+<a href="https://www.w3schools.com/html/html5_intro.asp">HTML5 L1</a>|
+<a href="https://www.tutorialspoint.com/html5/index.htm">HTML5 L2</a>|
+<a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">HTML5 L3</a>
+</nav>
+<section>
+<article>
+<h2> Participant Particulars</h2>
+<article>
+<table>
+<form action="abc.php">
+<tr><td>Name: </td> <td><input type="text" placeholder="eg: Alex"></td></tr>
+<tr><td>Mobile: </td> <td><input type="number" placeholder="eg: 9988776655" min="9000000000" max="9999999999"
+step="1"></td></tr> <!--HTML5 Input Tag-->
+<tr><td>e-mailId:</td> <td><input type="email" placeholder="eg: abc@gmail.com"></td></tr> <!--HTML5 Input Tag-->
+<tr><td>Password: </td> <td><input type="password" placeholder="eg: P@&&w0rd"></td></tr>
+<tr><td>Blogspot URL: </td> <td><input type="url" name="URL"></td></tr>
+<tr><td>CGPA: (1 to 10) </td> <td><input type="range" name="Range" min="1" max="10" required></td></tr>
+<tr><td>Login Time: </td> <td><input type="time" name="Time" min="00:00" max="23:59"></td></tr>
+<tr><td></td> <td><input type="submit" value="register"></td></tr>
+</form>
+</table>
+</section>
+<section>
+<h2>Events</h2>
+<article>
+<h3>Academic Events</h3>
+<p>Includes Internal & External Assessment </p>
+</article>
+<article>
+<h3>co-curricular Events</h3>
+<p>Includes Sports & Curtural Events </p>
+</article>
+</section>
+<aside style="font-size:larger;font-style:italic;color:red;float:right;width:130px">
+I welcome Everyone!!!
+<a href="http://www.google.com">click here</a>
+</aside>
+3
+<audio controls>
+<source src="Bells.mp3" type="audio/mpeg">
+Your browser does not support the audio tag.
+</audio>
+<video width="320" height="240" controls>
+<source src="Video.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.moveTo(0,0);
+ctx.lineTo(200,100);
+ctx.stroke();
+</script>
+<footer>
+<p>Author of Post</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,31 @@
+filename: 3_1a_fib.html
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/XHTML11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Generate Fibonacci Numbers! </title>
+</head>
+<body>
+<script type="text/javascript">
+var fib=0, fib1=0, fib2=1;
+var num=prompt("Enter the number : \n"," ");
+if (num!=null && num>0)
+{
+document.write("<h1>Fibonacci numbers are <br/></h1>");
+if (num==1)
+    document.write(fib1);
+else
+    document.write(fib1 +" "+ fib2);
+for (i=3; i<=num; i++)
+{
+    fib=fib1+fib2;
+    document.write( " " + fib );
+    fib1=fib2;
+    fib2=fib;
+}
+}
+else
+alert("No proper input");
+</script>
+</body>
+</html>

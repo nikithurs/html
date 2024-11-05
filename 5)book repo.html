@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Computer Science Book Repository</title>
+</head>
+<body>
+<h1>Computer Science Book Repository</h1>
+<form id="bookForm" onsubmit="retrieveBook(); return false;">
+Enter Book ID:
+<input type="text" id="bookId" required />
+<input type="submit" value="Retrieve Book Details" />
+</form>
+<div id="bookDetails"></div>
+<script>
+function retrieveBook()
+{
+var book_Id = document.getElementById('bookId').value;
+// Book details retrieval.
+var bookDetails = getBookDetails(book_Id);
+// Display the book details
+displayBookDetails(bookDetails);
+}
+function getBookDetails(bookId) {
+// For simplicity, we'll return a hardcoded object for a specific book ID.
+if (bookId == '1') {
+return {
+title: 'Programming the World Wide Web',
+author: 'RobertW.Sebesta',
+content: 'This book provides a comprehensive introduction to Web Design Technologies.'
+};
+} else {
+return {
+title: 'Book Not Found',
+author: 'NA',
+content: 'Sorry, the book with the specified title was not found.'
+};
+}
+}
+function displayBookDetails(bookDetails) {
+var detailsContainer = document.getElementById('bookDetails');
+detailsContainer.innerHTML = '<h2>' +'Title: '+ bookDetails.title + '</h2>' +
+'<p>Author: ' + bookDetails.author +'</p>' +
+'<p>Content: ' + bookDetails.content + '</p>';
+}
+</script>
+</body>
+</html>

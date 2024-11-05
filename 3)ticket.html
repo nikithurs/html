@@ -1,0 +1,33 @@
+<html>
+<head>
+<title> Ticket Booking Web site using various level of CSS </title>
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<style>
+h1{
+color:red;
+}
+</style>
+<script language="javascript" type="text/javascript">
+function total(){
+var a,b;
+a=Number(document.getElementById("first_textbox").value);
+b= a*100;
+document.getElementById("answer").value= b;
+}
+</script>
+</head>
+<body>
+<marquee><h1> Welcome to Online PVR Ticket Booking!!!</h1></marquee>
+<center>
+<h2 style="color:green;">Bill Particulars:</h2>
+Number Of Tickets Booked : <input type="number" id="first_textbox" > <br/><br/>
+<button onclick="total()">TOTAL PAYMENT</button><input type="text"
+id="answer"><br/><br/>
+Copyright 2023 @ BigtreeEntertainment Pvt. Ltd. All Rights Reserved.
+</body>
+</html>
+
+File: style.css
+body{
+background-color: skyblue;
+}

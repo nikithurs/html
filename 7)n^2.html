@@ -1,0 +1,39 @@
+filename: 3_1b_sq_num.html
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "
+-//W3C//DTD XHTML 1.1//EN"”http://www.w3.org/TR/XHTML11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Sequence Of Number Squares! </title>
+</head>
+<body>
+<script language="javascript" type="text/javascript"> //Script to print squares using alert box
+var num=window.prompt("Enter a number : \n"," ");
+var msg="Numbers and its squares are : \n";
+if (num!=null && num>0){
+for (i=1;i<=num;i++){
+msg=msg + i +"-" + i*i +"\n";
+//alert(msg);
+}
+alert(msg);
+}
+else
+alert("No input supplied");
+</script>
+<script language="javascript"> //Script to print squares using a table
+//input
+var n=prompt("enter a number");
+if(n!=null && n>0){
+var i=0;
+document.write("<h1>The first " + n + " numbers and their squares are: </h1>");
+//display in a table
+document.write("<table border=1><tr><th><b>Number</b></th><th><b>Square</b></th></tr>");
+for(i=1;i<=n;i++)
+document.write("<tr><td>" + i + "</td><td>" + i*i + "</td></tr>");
+document.write("</table>");
+}
+else
+alert("No input");
+</script>
+</body>
+</html>
